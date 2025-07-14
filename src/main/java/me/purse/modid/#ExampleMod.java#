@@ -17,27 +17,27 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 public class ExampleMod implements ModInitializer {
-	public static final Logger LOGGER = LoggerFactory.getLogger("modid");
+    public static final Logger LOGGER = LoggerFactory.getLogger("modid");
 
-	private static final Item BURGER = new Item(
-			new Item
-					.Settings()
-					.maxCount(16)
-					.food(
-                            new FoodComponent.Builder()
-									.hunger(5)
-									.saturationModifier(1.1f)
-									.statusEffect(
-									new StatusEffectInstance(
-											StatusEffects.FIRE_RESISTANCE, 500, 1
-									), 0.5f
-							).alwaysEdible().build()
-					)
-	);  // new FabricItemSettings();
-
-	private static final Item BANANA = new Item(
-			new Item.Settings().maxCount(4).food(FoodComponents.BREAD)
-	);
+    private static final Item BURGER = new Item(
+						new Item
+						.Settings()
+						.maxCount(16)
+						.food(
+						      new FoodComponent.Builder()
+						      .hunger(5)
+						      .saturationModifier(1.1f)
+						      .statusEffect(
+								    new StatusEffectInstance(
+											     StatusEffects.FIRE_RESISTANCE, 500, 1
+											     ), 0.5f
+								    ).alwaysEdible().build()
+						      )
+						);  // new FabricItemSettings();
+    
+    private static final Item BANANA = new Item(
+						new Item.Settings().maxCount(4).food(FoodComponents.BREAD)
+						);
 
 	public static final Item SPEAR = new Spear(new Item.Settings().maxCount(1));
 	@Override
@@ -57,7 +57,7 @@ public class ExampleMod implements ModInitializer {
 		});
 
 		ItemGroupEvents.modifyEntriesEvent(ItemGroups.COMBAT).register(entries -> {
-			entries.addAfter(Items.TRIDENT, SPEAR);
+			entries.addAfter(Items.IRON_SWORD, SPEAR);
 		});
 	}
 }
