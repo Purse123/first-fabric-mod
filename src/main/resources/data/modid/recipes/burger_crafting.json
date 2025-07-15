@@ -1,0 +1,21 @@
+{
+  "type": "crafting_shaped",
+  "group": "modid:food",
+  "pattern": [
+    " B ",
+    " C ",
+    " B "
+  ],
+  "key": {
+    "B": {
+      "item":"minecraft:bread"
+    },
+    "C": {
+      "item":"minecraft:beef"
+    }
+  },
+  "result": {
+    "count": 2,
+    "item": "modid:burger"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "type": "smoking",
+  "ingredient": {
+    "item": "minecraft:magma_cream"
+  },
+  "result": "modid:banana",
+  "experience": 10
+}

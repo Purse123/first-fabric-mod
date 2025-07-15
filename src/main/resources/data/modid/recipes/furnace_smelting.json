@@ -1,0 +1,8 @@
+{
+  "type": "smelting",
+  "ingredient": {
+    "item": "minecraft:sweet_berries"
+  },
+  "result": "minecraft:suspicious_stew",
+  "experience": 10
+}
